@@ -100,3 +100,26 @@ form {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+/*gallery page */
+
+.flex-container {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.flex-container > div {
+    
+    flex: 31%;
+    margin: 1%;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.flex-container img {
+    width: 90%;
+}
