@@ -1,0 +1,73 @@
+/* Colours: #D90000
+#A13030
+#8C0000
+#D94141
+#590000
+*/
+
+.logo {
+    margin: 0 auto;
+     display: block;
+ }
+ 
+ body {
+     margin: 0;
+     font-family: 'Nunito', sans-serif;
+     background-image: url("../images/background.jpg");
+     background-size: cover;
+     background-repeat: no repeat;
+     
+ }
+ 
+ #main {
+     width: 70%;
+     background-color: #fff;
+     margin: 0px auto;
+     max-width: 1000px;
+     
+ }
+ 
+ nav {
+     text-align: center;
+     padding: 30px;
+     background-color: #D90000;
+     background-image: url("../images/newlogo.png");
+     background-repeat: no-repeat;
+     background-position: left center;
+     
+ 
+ }
+ 
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     font-size: large;
+     padding-left: 2%;
+     padding-right: 2%;
+     
+ }
+ 
+ nav a:hover {
+     color: #590000; 
+ }
+ 
+ ul {
+     padding-left: 10%;
+     margin-bottom: 50px;
+ }
+ 
+ footer {
+     text-align: center;
+     background-color: #D90000;
+     padding: 20px;
+ }
+ 
+ #main p,h1,h2,h3{
+     padding-left: 5%;
+     padding-right: 5%;
+     line-height: 170%;
+ }
+ 
+ .sectionpic{
+     width: 100%;
+ }
