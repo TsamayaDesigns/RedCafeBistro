@@ -2,6 +2,8 @@
 <html lang="en">
 
     <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width,intitial-scale=1.0">
         <title>The Red Cafe Bistro</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -17,7 +19,19 @@
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <img class="sectionpic" src="img/diner.jpg" alt="Picture of the diner">
+
+            <!-- Create a container to hold the Image Slider -->
+            <div class="images-slider">
+                <ul id="slides">
+                    <!-- Images to be loaded from CSS -->
+                    <li class="slide showing"></li>
+                    <li class="slide"></li>
+                    <li class="slide"></li>
+                </ul>
+            </div>
+
+            <!-- Removed the Hero image -->
+            <!-- <img class="sectionpic" src="img/diner.jpg" alt="Picture of the diner"> -->
             <h1>About Us</h1>
             <p>The original Red Cafe Bistro – this is where everything began. Our Glasgow restaurant is the place where our family created and perfected the authentic dining experience that we are famous for today.</p>
             <p>With several menus packed full of traditional dishes, we have secured our place as the favourite, family-friendly restaurant in the Glasgow community.</p>
@@ -49,9 +63,44 @@
                 <li>Saturday - 12:00-23:00</li>
                 <li>Sunday - 12:00-22:00</li>
             </ul>
+
+            <!-- Testimonials -->
+            <div class="testimonial-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <h3>The Griswalds</h3>
+                    <img src="img/griswalds.jpeg" alt="Image of the Griswald family">
+                    <blockquote>
+                        <p><span>"</span> Everyone had a wonderful time at The Cafe last night. As expected, the food was delicious, and our servers were so friendly and helpful – we loved them! It was a delightful experience all round.</p>
+                        <h4>Clark Griswald</h4>
+                    </blockquote>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <h3>The Adams Family</h3>
+                    <img src="img/adams_family.jpg" alt="Image of the Adams family">    
+                    <blockquote>
+                        <p><span>"</span> We were at the cafe last night. It was amazing! I have to say it is the best meal we have had in quite some time. You will definitely be seeing us all again. We can't wait for our family to come and visit so we can bring them with us!</p>
+                        <h4>Morticia Adams</h4>
+                    </blockquote>
+                </div>
+
+                <div class="arrow-wrapper">
+                    <div class="arrow-inner">
+                        <img src="img/left.png" alt="Left arrow">
+                        <img src="img/right.png" alt="Right arrow">
+                    </div>
+                </div>
+            </div>
+
             <footer>
             <p>All Content &copy; Red Cafe Bistro 2021</p></footer>
+            <div>
+                <h1>Testimonial</h1>
+                <noscript>You do not have JavaScript enabled. Please enable to use this function.</noscript>
+            </div>
         </section>
-    
+        <script src="js/script.js" type="text/javascript"></script>
     </body>
 </html>
