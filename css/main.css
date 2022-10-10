@@ -1,8 +1,13 @@
-/* Colours: #D90000
+/* Colours:
+#D90000
 #A13030
 #8C0000
 #D94141
 #590000
+*/
+/* Fonts
+font-family: 'Architects Daughter', cursive;
+font-family: 'Comfortaa', cursive;
 */
 
 .logo {
@@ -195,7 +200,7 @@ form {
 }
 
 .testimonial h3 {
-
+    font-family: 'Comfortaa', cursive;
 }
 
 .testimonial img {
@@ -206,6 +211,7 @@ form {
 }
 
 blockquote {
+    font-family: 'Architects Daughter', cursive;
 }
 
 blockquote span {
@@ -214,17 +220,28 @@ blockquote span {
     font-style: italic;
 }
 
+blockquote h4 {
+    font-family: 'Comfortaa', cursive;
+}
+
 .arrow-wrapper {
-
-}
-
-.arrow-inner {
-
-}
-
-.arrow-inner img {
-
-}
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .arrow-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .arrow-inner img {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 
 .flex-end {
 
