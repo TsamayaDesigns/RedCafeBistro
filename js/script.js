@@ -19,3 +19,18 @@ function slider() {
     }
 }
 slider();
+
+// JQuery - Testimonial
+$(document).ready(function() {
+    $("#testimonialTwo, #leftArrow").hide();
+    $("#rightArrow").click(function() {
+        $("#testimonialOne, #rightArrow").hide();
+        $("#testimonialTwo, #leftArrow").show();
+        $(".arrow-inner").addClass('flex-end');
+    });
+    $("#leftArrow").click(function() {
+        $("#testimonialTwo, #leftArrow").hide();
+        $("#testimonialOne, #rightArrow").show();
+        $(".arrow-inner").removeClass('flex-end');
+    });
+});

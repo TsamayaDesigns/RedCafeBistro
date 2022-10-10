@@ -234,7 +234,7 @@ blockquote h4 {
   .arrow-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
   }
   
@@ -244,9 +244,8 @@ blockquote h4 {
   }
 
 .flex-end {
-
+    justify-content: flex-start;
 }
-
 
 /* Mobile-friendly */
 @media (max-width: 1000px){
