@@ -7,7 +7,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet" type="text/css">
-
     </head>
     <body>
         <section id="main">
@@ -18,23 +17,98 @@
             </nav>
             <!--start of different content-->
             <div class="flex-container">
-                <div><img src="img/gallery1.jpg" alt="image of food"></div>
-                <div><img src="img/gallery2.jpg" alt="image of food"></div>
-                <div><img src="img/gallery3.jpg" alt="image of food"></div>
-                
-                <div><img src="img/gallery4.jpg" alt="image of food"></div>
-                <div><img src="img/gallery5.jpg" alt="image of food"></div>
-                <div><img src="img/gallery6.jpg" alt="image of food"></div>
-                
-                <div><img src="img/gallery7.jpg" alt="image of food"></div>
-                <div><img src="img/gallery8.jpg" alt="image of food"></div>
-                <div><img src="img/gallery9.jpg" alt="image of food"></div>
-            
+                <div>
+                    <img src="img/gallery1.jpg" alt="image of food" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery2.jpg" alt="image of food" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery3.jpg" alt="image of food" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>               
+                <div>
+                    <img src="img/gallery4.jpg" alt="image of food" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery5.jpg" alt="image of food" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery6.jpg" alt="image of food" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>               
+                <div>
+                    <img src="img/gallery7.jpg" alt="image of food" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery8.jpg" alt="image of food" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+                <div>
+                    <img src="img/gallery9.jpg" alt="image of food" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+           <!-- modal container -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <!-- Slides -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="img/gallery1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="img/gallery2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="img/gallery3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="img/gallery4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="img/gallery5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="img/gallery6.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="img/gallery7.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="img/gallery8.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="img/gallery9.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
             </div>
             <!--end of different content-->
             <footer>
-            <p>All Content &copy; Red Cafe Bistro 2021</p></footer>
+                <p>All Content &copy; Red Cafe Bistro 2021</p>
+            </footer>
         </section>
-    
+        <script src="js/gallery.js"></script>
     </body>
 </html>
